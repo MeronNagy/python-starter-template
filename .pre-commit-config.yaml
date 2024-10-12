@@ -10,10 +10,10 @@ repos:
     rev: 24.10.0
     hooks:
       - id: black
-  - repo: https://github.com/PyCQA/pylint
-    rev: v3.3.1
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.1.1  # pick a git hash / tag to point to
     hooks:
-      - id: pylint
+    -   id: flake8
   # Custom Pyright hook
   - repo: local
     hooks:

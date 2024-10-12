@@ -10,9 +10,13 @@ python = "^3.9"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.10.0"
-pyright = "^1.1.384"
-pylint = "^3.3.1"
 pre-commit = "^4.0.1"
+flake8 = "^7.1.1"
+mypy = "^1.11.2"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
 
 [build-system]
 requires = ["poetry-core"]

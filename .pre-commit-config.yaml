@@ -17,8 +17,8 @@ repos:
   # Custom Pyright hook
   - repo: local
     hooks:
-      - id: pyright
-        name: Pyright Type Checking
-        entry: poetry run pyright
+      - id: mypy
+        name: mypy
+        entry: poetry run mypy --strict
         language: system
         types: [python]

@@ -1,8 +1,8 @@
-def get_text():
-    return "Hello World!"
+def get_text() -> str:
+    return "Hello World"
 
 
-def main():
+def main() -> None:
     print(get_text())
 
 
